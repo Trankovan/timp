@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" style="-fx-background-color: #e8e8e8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="labelSurname" layoutX="211.0" layoutY="388.0" text="Фамилия ">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelName" layoutX="211.0" layoutY="434.0" text="Имя">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelMiddleName" layoutX="211.0" layoutY="456.0" text="Отчество">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelGender" layoutX="190.0" layoutY="478.0" text="Муж">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelDateOfBirth" layoutX="275.0" layoutY="478.0" text="23.06.2004">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelIssueDate" layoutX="114.0" layoutY="180.0" text="23.08.2018">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="600.0" layoutY="46.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aaaaaa;">
+         <children>
+            <Label fx:id="labelStatus" layoutX="45.0" layoutY="71.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Button layoutX="67.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Решение" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="passportDatabaseTable" layoutX="991.0" layoutY="46.0" prefHeight="200.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="Имя" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Фамилия" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
