@@ -1,61 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" style="-fx-background-color: #e8e8e8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" style="-fx-background-color: #e8e8e8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.timp.DataController">
    <children>
-      <Label fx:id="labelSurname" layoutX="211.0" layoutY="388.0" text="Фамилия ">
+      <ImageView fitHeight="441.0" fitWidth="407.0" layoutX="81.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="labelSurname" layoutX="211.0" layoutY="388.0" rotate="90.0" style="-fx-background-color: transparent;" text="Фамилия ">
          <font>
             <Font name="Times New Roman" size="10.0" />
          </font>
-      </Label>
-      <Label fx:id="labelName" layoutX="211.0" layoutY="434.0" text="Имя">
+      </TextField>
+      <TextField fx:id="labelName" layoutX="211.0" layoutY="434.0" text="Имя">
          <font>
             <Font name="Times New Roman" size="10.0" />
          </font>
-      </Label>
-      <Label fx:id="labelMiddleName" layoutX="211.0" layoutY="456.0" text="Отчество">
+      </TextField>
+      <TextField fx:id="labelMiddleName" layoutX="202.0" layoutY="469.0" text="Отчество">
          <font>
             <Font name="Times New Roman" size="10.0" />
          </font>
-      </Label>
-      <Label fx:id="labelGender" layoutX="190.0" layoutY="478.0" text="Муж">
+      </TextField>
+      <TextField fx:id="labelGender" layoutX="211.0" layoutY="502.0" text="Муж">
          <font>
             <Font name="Times New Roman" size="10.0" />
          </font>
-      </Label>
-      <Label fx:id="labelDateOfBirth" layoutX="275.0" layoutY="478.0" text="23.06.2004">
+      </TextField>
+      <TextField fx:id="labelAddress" layoutX="51.0" layoutY="406.0" text="Муж">
          <font>
             <Font name="Times New Roman" size="10.0" />
          </font>
-      </Label>
-      <Label fx:id="labelIssueDate" layoutX="114.0" layoutY="180.0" text="23.08.2018">
+      </TextField>
+      <TextField fx:id="labelDateOfBirth" layoutX="220.0" layoutY="531.0" text="23.06.2004">
          <font>
             <Font name="Times New Roman" size="10.0" />
          </font>
-      </Label>
-      <AnchorPane layoutX="600.0" layoutY="46.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #aaaaaa;">
-         <children>
-            <Label fx:id="labelStatus" layoutX="45.0" layoutY="71.0" text="Label">
-               <font>
-                  <Font name="System Bold" size="48.0" />
-               </font>
-            </Label>
-            <Button layoutX="67.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Решение" textAlignment="CENTER" />
-         </children>
-      </AnchorPane>
-      <TableView fx:id="passportDatabaseTable" layoutX="991.0" layoutY="46.0" prefHeight="200.0" prefWidth="306.0">
-        <columns>
-          <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="Имя" />
-          <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Фамилия" />
-        </columns>
-      </TableView>
+      </TextField>
+      <TextField fx:id="labelIssueDate" layoutX="140.0" layoutY="141.0" text="23.08.2018">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="labelSerialNumber" layoutX="176.0" layoutY="241.0" text="23.08.2018">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="labelWhoGive" layoutX="140.0" layoutY="178.0" text="23.08.2018">
+      <font>
+         <Font name="Times New Roman" size="10.0" />
+      </font>
+   </TextField>
+
+      <ListView fx:id="dataBaseLV" layoutX="412.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="queuePassportB" layoutX="400.0" layoutY="560.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="decisionB" layoutX="586.0" layoutY="560.0" mnemonicParsing="false" text="Button" />
+      <TextField fx:id="decisionTF" layoutX="426.0" layoutY="489.0" />
+      <TextField fx:id="reasonTF" layoutX="426.0" layoutY="527.0" />
+
+
    </children>
-</Pane>
+</AnchorPane>
